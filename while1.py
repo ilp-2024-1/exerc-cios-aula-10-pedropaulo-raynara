@@ -16,4 +16,18 @@ while num != 0:
 print("fim do programa")
 
 #questão 3 
+senha = 1234
+login = int(input("digite a senha:"))
+while login != senha:
+  print("senha incorreta")
+  login = int(input("digite a senha:"))
+
+print("senha correta!!!")
+print("fim do programa")
+
+
+
+
+
+
 
