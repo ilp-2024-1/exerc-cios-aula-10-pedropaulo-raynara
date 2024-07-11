@@ -26,8 +26,18 @@ print("senha correta!!!")
 print("fim do programa")
 
 #questão 4 
-print("testando")
- 
+import random 
+random_num = random.randint(1,100)
+tentativas = 0 
+palpite = int(input("chute um número (entr 1 e 100):"))
+while palpite != random_num:
+    print("número incorreto")
+    palpite = int(input("chute um número (entr 1 e 100):"))
+    tentativas +=1
+if palpite == random_num:
+    print(f"Parabéns! você acertou o número secreto {random_num} em {tentativas} tentativas.")
+print("fim do programa")
+
 
 
 
