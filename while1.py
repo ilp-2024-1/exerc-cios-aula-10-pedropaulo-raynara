@@ -38,6 +38,19 @@ if palpite == random_num:
     print(f"Parabéns! você acertou o número secreto {random_num} em {tentativas} tentativas.")
 print("fim do programa")
 
+#questão 5
+num_int= int(input("digite um número inteiro e positivo:"))
+contador = 1
+fatorial = 1
+while num_int <= 0:
+    print("este não é um número inteiro positivo")
+    num_int = int(input("digite um número inteiro e positivo:"))
+while contador <= num_int:
+    fatorial *= contador
+    contador += 1 
+print(f"o fatorial de {num_int} é {fatorial}")
+print("fim do programa.")
+
 
 
 
