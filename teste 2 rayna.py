@@ -1,12 +1,10 @@
-print('calcule a soma dos dígitos')
-n = int(input('digite um numero inteiro:'))
+print('soma da série')
+n = int(input('digite um número inteiro:'))
 soma = 0
-num = abs (n)
+serie = 1
 
-while num > 0:
-    digito = num % 10
-    soma += digito
-    num //= 10
-
-print(f'entrada: {n} saída: {soma}')
+while serie <= n:
+    soma += 1/serie
+    serie += 1
+print(f'a soma da série harmônica até o enésimo termo({n}) é {soma}:')
 print('fim do programa')
