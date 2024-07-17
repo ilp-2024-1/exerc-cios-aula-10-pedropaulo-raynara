@@ -52,19 +52,19 @@ print(f"o fatorial de {num_int} é {fatorial}")
 print("fim do programa.")
 
 #questão 6 
-n = int(input("Digite um número inteiro positivo: "))
-while n <= 0:
-   print("digite um número inteiro positivo.")
-   n = int(input("Digite um número inteiro positivo: "))
-else:
-    a, b = 0, 1
-    contagem = 0
-    print(f"Os {n} primeiros termos da sequência de Fibonacci são:")
-    while contagem < n:
-        print(a)
-        a, b = b, a + b
-        contagem += 1 
-    print("fim do programa.")
+print ('sequência de fibonacci')
+n = int(input('digite um número inteiro positivo:'))
+n1 = 0
+n2 = 1
+print('{}{}'. format (n1,n2), end='')
+count = 3
+while count <=n:
+    n3 = n1 + n2
+    print('{}'. format (n3), end='')
+    n1 = n2
+    n2 = n3
+    count += 1
+    print('\n''fim do programa.')
 
 
 
